@@ -1,0 +1,226 @@
+/* pagina principala, pagina prexzentare carti, pagina favorite, pagina citate */
+body, html{
+    background-color: #FDF0F6;
+    margin: 0;
+    padding: 0;
+}
+
+.meniu
+{
+    padding: 10px;
+    background-color: #FC7FB6;
+    color: #771144 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.text
+{
+    
+    font-size: 110%;
+    font-weight: bold;
+    
+}
+
+.link
+{
+    text-decoration: none;
+    color:#771144;
+}
+
+.link:hover
+{
+    color:#1E0411;
+    font-size: 120%;
+    font-style: italic;
+    text-shadow: 0 0 3px #1E0411;
+}
+
+.logo
+{
+    width: 4em;
+    height: 4em;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+#dropdown
+{
+    display: none;
+}
+
+#dd_content
+{
+    display: none;
+}
+
+main
+{
+    padding: 2em;
+    
+}
+
+.bine
+{
+    color: #771144 ;
+    font-size: 3em;
+    font-style: italic;
+    display: flex;
+    margin-left: 100px;
+    transition: color 4s;
+    transition: transform 2s;
+}
+
+/* tranzitie ******************************************* */
+
+.bine:hover{
+    color: #1E0411;
+    transform: translateX(20px);
+    
+} 
+
+#pisica
+{
+    transition: transform 2s;
+}
+
+#pisica:hover
+{
+    transform: scale(1.1, 1.1);
+}
+
+.main3
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+}
+
+.lista
+{
+    font-size: 150%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-align:justify;
+    margin-left: 1em;
+     /* margin:2em;  */
+    
+}
+
+li{
+    margin-bottom: 3em;
+} 
+
+.paragraf
+{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-family:'Courier New', Courier, monospace;
+    font-weight: bold; */
+}
+
+
+
+.introdcere
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#dropdown
+{
+    display: none;
+}
+
+/* -----------------------------------media---------------------- */
+
+@media (max-width: 750px) 
+{
+    .main3
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* #pisica:hover
+    {   
+        transform: scale(1.1, 1.1) ;
+        
+    }  */
+
+}
+
+@media (max-width: 900px) 
+{
+    /* .main3
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    /* #pisica:hover
+    {   
+        transform: scale(1.1, 1.1) ;
+        
+    }  */
+
+}
+
+
+@media (max-width: 500px)
+{
+    #dropdown
+    {
+        visibility: visible;
+        position: relative;
+        display: block;
+    }
+
+    #dropdown:hover #dd_content
+    {
+        display: block;
+    }
+
+    #dd_content
+    {
+        position: absolute;
+        background-color: #FDF0F6;
+        padding: 10px;
+        border-radius: 20%;
+        box-shadow: 10px 5px 5px #FDF0F6;
+        font-size: 5vw;
+    }
+
+    #dd_content a:hover
+    {
+        color: #771144;
+    }
+
+    #dd_content a
+    {   margin: 5px;
+
+    }
+
+
+    .text
+    {
+        visibility: hidden;
+    }
+
+}
+
+
+footer{
+    width: 100%;
+    background-color: #771144;
+    color:#FDF0F6;
+    font-size: 110%;
+     display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
