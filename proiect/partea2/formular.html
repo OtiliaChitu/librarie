@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Formular pentru intrarea în Sistemul Solar</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="formular.css" type="text/css">
+      <script type="text/javascript" src="formular.js"></script>
+   </head>
+   <body>
+     <h3>FORMULAR PENTRU ADAUGAREA CARTII LA FAVORITE</h3>
+     
+     <div id="container">
+       <form method="post" action="Earth" target="_self">
+            <fieldset>
+                <legend>Detalii</legend>
+                <div>
+                    <label for="detalii">Detalii</label>
+                    <textarea id="detalii" name="detalii" minlength="3" maxlength="300" required></textarea>
+                </div>
+                
+                <div>
+                    <label for="data">Data la care adaugi cartea</label>
+                    <input type="date" id="data" name="data" min="1800-01-01" max="2025-01-01" required/>
+                </div>
+                
+                <div>
+                    <label for="parere">Parere</label>
+                    <select id="parere">
+                        <option value="">Please choose an option</option>
+                        <option value="Interesanta">Interesanta</option>
+                        <option value="Mi-a recomandat-o un prieten">Mi-a recomandat-o un prieten</option>
+                        <option value="Are review-uri bune">Are review-uri bune</option>
+                        <option value="Vreau sa o citesc cat mai repede">Vreau sa o citesc cat mai repede</option>
+                        <option value="Poate o sa o citesc candva">Poate o sa o citesc candva</option>
+                        <option value="Putin interesant">Putin interesant</option>
+                    </select>
+                </div>
+               
+            </fieldset>
+            
+            <input type="submit" value="Trimite cerere"/>
+       </form>
+     </div>
+   </body>
+</html>
